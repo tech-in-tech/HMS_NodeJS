@@ -1,33 +1,41 @@
-const mongoose  = require("mongoose")
+const mongoose = require("mongoose")
 // define the person scheme
 const personSchema = new mongoose.Schema({
-  name:{
+  name: {
     type: String,
     required: true
   },
-  age:{
+  age: {
     type: Number,
   },
-  work:{
-    type:String,
-    enum:['chef','waiter','manager'],
-    required:true
-  },
-  mobile:{
-    type:Number,
+  work: {
+    type: String,
+    enum: ['chef', 'waiter', 'manager'],
     required: true
   },
-  email:{
+  mobile: {
+    type: Number,
+    required: true
+  },
+  email: {
     type: String,
     required: true,
-    unique:true
+    unique: true
   },
-  address:{
-    type:String,
+  address: {
+    type: String,
   },
-  salary:{
+  salary: {
     type: Number,
     required: true
+  },
+  username: {
+    required: true,
+    type: String
+  },
+  password: {
+    required: true,
+    type: String
   }
 });
 
