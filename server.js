@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000
 
 
 
-// Middle function
+// Middleware function
                                
 const logRequest =(req,res,next)=>{
   console.log(`${new Date().toLocaleString()} Request Made to : ${req.originalUrl}`)
