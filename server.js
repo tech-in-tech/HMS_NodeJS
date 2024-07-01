@@ -36,7 +36,7 @@ const menuItemsRoutes= require('./routes/menuItemsRoutes');
 
 
 
-app.use('/Person',localAuthMiddleware,personRoutes);
+app.use('/Person',personRoutes);
 app.use('/menu',menuItemsRoutes);
 
 
